@@ -1,0 +1,57 @@
+/**
+ * Bu CSS dosyası, global stilleri içerir. Klasik şablon
+ * varsayılan olarak Infima'yı içerir. Infima, içerik odaklı
+ * web siteleri için tasarlanmış bir CSS framework'üdür.
+ */
+
+/* Varsayılan Infima değişkenlerini burada geçersiz kılabilirsiniz. */
+:root {
+  --ifm-color-primary: #1E90FF;
+  --ifm-color-primary-dark: #1C86EE;
+  --ifm-color-primary-darker: #1874CD;
+  --ifm-color-primary-darkest: #104E8B;
+  --ifm-color-primary-light: #63B8FF;
+  --ifm-color-primary-lighter: #87CEFA;
+  --ifm-color-primary-lightest: #B0E2FF;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-background-color: #F8F8FF;
+  --ifm-font-color-base: #333333;
+}
+
+/* Okunabilirlik açısından, koyu modda daha açık bir palet seçmelisiniz. */
+[data-theme='dark'] {
+  --ifm-color-primary: #1E90FF;
+  --ifm-color-primary-dark: #1C86EE;
+  --ifm-color-primary-darker: #1874CD;
+  --ifm-color-primary-darkest: #104E8B;
+  --ifm-color-primary-light: #63B8FF;
+  --ifm-color-primary-lighter: #87CEFA;
+  --ifm-color-primary-lightest: #B0E2FF;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-background-color: #333333;
+  --ifm-font-color-base: #F8F8FF;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@400;600;700&display=swap');
+
+#__blog-post-container {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #222;
+}
+
+#__blog-post-container h1,
+#__blog-post-container h2,
+#__blog-post-container h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #0070f3;
+}
+
+/* Koyu mod için özel blog stilleri */
+[data-theme='dark'] #__blog-post-container {
+  color: #F8F8FF;
+}
+
